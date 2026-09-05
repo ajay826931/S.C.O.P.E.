@@ -5,3 +5,4 @@ Verified project milestones and technical development notes.
 - [2026-09-02 11:42:19] fix(labels): validate class indices against custom dataset ontology
 - [2026-09-04 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
 - [2026-09-05 10:14:22] refactor(io): stream large tensor files to prevent heap exhaustion
+- [2026-09-05 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
