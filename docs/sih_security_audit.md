@@ -10,3 +10,4 @@ Verified project milestones and technical development notes.
 - [2026-09-06 11:42:19] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-09-07 10:14:22] feat(alerts): add visual danger tags for high-confidence trojan layers
 - [2026-09-07 12:28:35] docs(security): document spectral defense against label flip attacks
+- [2026-09-07 14:48:30] refactor(io): stream large tensor files to prevent heap exhaustion
