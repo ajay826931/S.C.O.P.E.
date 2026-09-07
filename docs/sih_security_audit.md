@@ -8,3 +8,4 @@ Verified project milestones and technical development notes.
 - [2026-09-05 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
 - [2026-09-05 14:48:30] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-09-06 11:42:19] feat(audit): add checksum validation for uploaded dataset archives
+- [2026-09-07 10:14:22] feat(alerts): add visual danger tags for high-confidence trojan layers
