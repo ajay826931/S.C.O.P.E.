@@ -13,3 +13,4 @@ Verified project milestones and technical development notes.
 - [2026-09-07 14:48:30] refactor(io): stream large tensor files to prevent heap exhaustion
 - [2026-09-08 10:14:22] fix(labels): validate class indices against custom dataset ontology
 - [2026-09-08 12:28:35] feat(export): support PDF summary generation for audit certificates
+- [2026-09-08 14:48:30] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
