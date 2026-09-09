@@ -16,3 +16,4 @@ Verified project milestones and technical development notes.
 - [2026-09-08 14:48:30] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-09-08 17:05:25] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-09-08 19:22:40] perf(memory): release GPU memory buffers immediately after audit pass
+- [2026-09-09 11:42:19] refactor(dashboard): improve progress feedback during multi-file scan
