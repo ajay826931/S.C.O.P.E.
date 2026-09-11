@@ -20,3 +20,4 @@ Verified project milestones and technical development notes.
 - [2026-09-10 10:14:22] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-09-10 12:28:35] docs(compliance): align security audit checks with AI safety standards
 - [2026-09-10 14:48:30] fix(validation): handle corrupt ONNX protobuf headers gracefully
+- [2026-09-11 11:05:40] perf(memory): release GPU memory buffers immediately after audit pass
