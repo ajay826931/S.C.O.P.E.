@@ -27,3 +27,4 @@ Verified project milestones and technical development notes.
 - [2026-09-14 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
 - [2026-09-15 11:05:40] fix(labels): validate class indices against custom dataset ontology
 - [2026-09-16 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
+- [2026-09-16 12:28:35] refactor(dashboard): improve progress feedback during multi-file scan
