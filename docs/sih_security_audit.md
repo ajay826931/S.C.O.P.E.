@@ -29,3 +29,4 @@ Verified project milestones and technical development notes.
 - [2026-09-16 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-09-16 12:28:35] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-09-17 11:42:19] docs(trojan): record trigger pattern sensitivity matrix
+- [2026-09-18 10:14:22] fix(labels): validate class indices against custom dataset ontology
