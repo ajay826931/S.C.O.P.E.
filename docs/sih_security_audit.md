@@ -31,3 +31,4 @@ Verified project milestones and technical development notes.
 - [2026-09-17 11:42:19] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-09-18 10:14:22] fix(labels): validate class indices against custom dataset ontology
 - [2026-09-18 12:28:35] feat(export): support PDF summary generation for audit certificates
+- [2026-09-20 11:05:40] docs(mitigation): compile clean-label attack defense recommendations
