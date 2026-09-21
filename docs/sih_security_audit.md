@@ -33,3 +33,4 @@ Verified project milestones and technical development notes.
 - [2026-09-18 12:28:35] feat(export): support PDF summary generation for audit certificates
 - [2026-09-20 11:05:40] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-09-21 10:14:22] chore: clean up temporary audit logs and cache artifacts
+- [2026-09-21 12:28:35] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
