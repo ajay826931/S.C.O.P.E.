@@ -35,3 +35,4 @@ Verified project milestones and technical development notes.
 - [2026-09-21 10:14:22] chore: clean up temporary audit logs and cache artifacts
 - [2026-09-21 12:28:35] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
 - [2026-09-21 14:48:30] docs(sih): record jury presentation talking points and demo flow
+- [2026-09-22 11:42:19] fix(labels): validate class indices against custom dataset ontology
