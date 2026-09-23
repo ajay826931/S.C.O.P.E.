@@ -37,3 +37,4 @@ Verified project milestones and technical development notes.
 - [2026-09-21 14:48:30] docs(sih): record jury presentation talking points and demo flow
 - [2026-09-22 11:42:19] fix(labels): validate class indices against custom dataset ontology
 - [2026-09-22 14:02:44] feat(export): support PDF summary generation for audit certificates
+- [2026-09-23 11:42:19] docs(compliance): align security audit checks with AI safety standards
