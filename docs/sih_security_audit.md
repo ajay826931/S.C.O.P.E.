@@ -40,3 +40,4 @@ Verified project milestones and technical development notes.
 - [2026-09-23 11:42:19] docs(compliance): align security audit checks with AI safety standards
 - [2026-09-24 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
 - [2026-09-25 11:05:40] fix(labels): validate class indices against custom dataset ontology
+- [2026-09-25 13:15:10] feat(export): support PDF summary generation for audit certificates
