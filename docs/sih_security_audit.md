@@ -46,3 +46,4 @@ Verified project milestones and technical development notes.
 - [2026-09-28 12:28:35] feat(export): support PDF summary generation for audit certificates
 - [2026-09-29 10:14:22] docs(compliance): align security audit checks with AI safety standards
 - [2026-09-29 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
+- [2026-09-29 14:48:30] feat(alerts): add visual danger tags for high-confidence trojan layers
