@@ -48,3 +48,4 @@ Verified project milestones and technical development notes.
 - [2026-09-29 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
 - [2026-09-29 14:48:30] feat(alerts): add visual danger tags for high-confidence trojan layers
 - [2026-09-29 17:05:25] docs(security): document spectral defense against label flip attacks
+- [2026-09-29 19:22:40] refactor(io): stream large tensor files to prevent heap exhaustion
