@@ -50,3 +50,4 @@ Verified project milestones and technical development notes.
 - [2026-09-29 17:05:25] docs(security): document spectral defense against label flip attacks
 - [2026-09-29 19:22:40] refactor(io): stream large tensor files to prevent heap exhaustion
 - [2026-09-30 11:42:19] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
+- [2026-10-01 10:14:22] chore: clean up temporary audit logs and cache artifacts
