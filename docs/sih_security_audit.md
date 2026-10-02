@@ -52,3 +52,4 @@ Verified project milestones and technical development notes.
 - [2026-09-30 11:42:19] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-10-01 10:14:22] chore: clean up temporary audit logs and cache artifacts
 - [2026-10-02 10:14:22] feat(dashboard): add interactive threshold slider for backdoor confidence
+- [2026-10-02 12:28:35] chore(test): add unit tests for corrupted weight tensor detectors
