@@ -57,3 +57,4 @@ Verified project milestones and technical development notes.
 - [2026-10-03 10:14:22] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-10-03 12:28:35] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-10-05 10:14:22] refactor(io): stream large tensor files to prevent heap exhaustion
+- [2026-10-05 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
