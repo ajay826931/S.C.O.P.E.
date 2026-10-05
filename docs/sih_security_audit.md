@@ -56,3 +56,4 @@ Verified project milestones and technical development notes.
 - [2026-10-02 14:48:30] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-10-03 10:14:22] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-10-03 12:28:35] feat(audit): add checksum validation for uploaded dataset archives
+- [2026-10-05 10:14:22] refactor(io): stream large tensor files to prevent heap exhaustion
