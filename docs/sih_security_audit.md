@@ -60,3 +60,4 @@ Verified project milestones and technical development notes.
 - [2026-10-05 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
 - [2026-10-06 11:42:19] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-10-06 14:02:44] chore: clean up temporary audit logs and cache artifacts
+- [2026-10-06 16:18:50] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
