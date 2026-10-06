@@ -40,7 +40,7 @@ with col_preset:
     preset = st.selectbox(
         "⚡ Select Model Test Scenario:",
         [
-            "data/models/backdoored_model.onnx (Injected Trojan Attack Demo)",
+            "data/models/backdoored_model.onnx (Injected Trojan Attack Vector)",
             "data/models/clean_model.onnx (Verified Clean Model)"
         ]
     )

@@ -1,7 +1,7 @@
 ﻿"""
 Demo Script: Generate Clean and Backdoored Models (ONNX format).
 Constructs a valid computer vision classifier model and an infected Trojan model
-for live Hackathon auditing and demonstration.
+for security auditing and validation.
 """
 
 import sys

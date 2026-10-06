@@ -296,9 +296,9 @@ S.C.O.P.E./
 
 ---
 
-## 🛡️ Hackathon Demonstration Checklist
+## 🛡️ Security Verification & Threat Simulation Suite
 
-| Attack Scenario | Demonstration Command / UI Action | Observed Defense Outcome |
+| Threat Vector | Demonstration Command / UI Action | Observed Defense Outcome |
 | :--- | :--- | :--- |
 | **Data Poisoning** | `python main.py data-scan --path data/poisoned_data` | Catches 7/7 vulnerabilities (Out-of-bound boxes, negative class IDs, blank images). |
 | **Model Trojan** | `python main.py model-scan --model data/models/backdoored_model.onnx` | Detects top-left solid trigger forcing Target Class 4 with 100% Attack Success Rate. |
@@ -320,4 +320,8 @@ S.C.O.P.E./
 ---
 
 ## 📜 License
-Developed for educational, research, and hackathon presentation purposes under the MIT License.
+## 👤 Author
+Architected and developed by **Ajayraj Kushwah** ([@ajay826931](https://github.com/ajay826931)) as a standalone open-source Computer Vision security & assurance framework.
+
+## 📜 License
+Distributed under the MIT License. See LICENSE for more information.

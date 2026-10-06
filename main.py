@@ -1,6 +1,6 @@
 ﻿"""
 Main CLI Entry Point for Antigravity CV-Sec Framework.
-Provides full offline command-line auditing and hackathon demo automation.
+Provides full offline command-line auditing and automated security verification.
 """
 
 import sys

@@ -41,7 +41,7 @@ with col_preset:
     preset = st.selectbox(
         "⚡ Choose Dataset Scenario:",
         [
-            "data/poisoned_data (Injected Poison Attack Demo)",
+            "data/poisoned_data (Injected Poison Attack Vector)",
             "data/clean_data (Verified Reference Dataset)"
         ]
     )
