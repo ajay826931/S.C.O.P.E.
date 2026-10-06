@@ -1,0 +1,27 @@
+﻿# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+.pytest_cache/
+
+# Streamlit Cache
+.streamlit/
+
+# OS and IDE files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Temporary and build artifacts
+*.tmp
+*.log

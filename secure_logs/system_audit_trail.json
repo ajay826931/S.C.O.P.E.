@@ -1,0 +1,14 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-10-06T09:26:06.223888+00:00",
+    "module": "SYSTEM",
+    "event_type": "LEDGER_INITIALIZED",
+    "payload": {
+      "message": "Admin initialized fresh audit trail.",
+      "MALICIOUS_MODIFICATION": "ATTACKER_ALTERED_RECORDS"
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "current_hash": "387f492316e1d375f9840470bf3fcba6796306546cf68872d21ecd81f380424e"
+  }
+]
