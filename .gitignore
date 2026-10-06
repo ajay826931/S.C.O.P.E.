@@ -25,3 +25,7 @@ Thumbs.db
 # Temporary and build artifacts
 *.tmp
 *.log
+
+# Ignore all markdown documentation except README.md
+*.md
+!README.md
