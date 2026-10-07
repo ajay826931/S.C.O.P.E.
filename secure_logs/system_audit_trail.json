@@ -10,5 +10,85 @@
     },
     "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
     "current_hash": "387f492316e1d375f9840470bf3fcba6796306546cf68872d21ecd81f380424e"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-10-07T11:12:36.838359+00:00",
+    "module": "DATA_INTEGRITY",
+    "event_type": "DATA_SCAN_COMPLETED",
+    "payload": {
+      "dataset_path": "data/clean_data",
+      "total_images": 3,
+      "flags_count": 0,
+      "risk_score": 0.0,
+      "status": "PASSED",
+      "summary": "Dataset audit finished: 3 images inspected. Found 0 issues across 3 strategies. Status: PASSED (Risk Score: 0.0/100)."
+    },
+    "prev_hash": "387f492316e1d375f9840470bf3fcba6796306546cf68872d21ecd81f380424e",
+    "current_hash": "7fcb1a6b48c6a08c70273babf274a902e792fe489485a2e05ceb6756c3d3d955"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-10-07T11:12:36.965985+00:00",
+    "module": "DATA_INTEGRITY",
+    "event_type": "DATA_SCAN_COMPLETED",
+    "payload": {
+      "dataset_path": "data/poisoned_data",
+      "total_images": 4,
+      "flags_count": 7,
+      "risk_score": 100.0,
+      "status": "FAILED",
+      "summary": "Dataset audit finished: 4 images inspected. Found 7 issues across 3 strategies. Status: FAILED (Risk Score: 100.0/100)."
+    },
+    "prev_hash": "7fcb1a6b48c6a08c70273babf274a902e792fe489485a2e05ceb6756c3d3d955",
+    "current_hash": "08545e4f148f7f3d75bd79e07e9342443e2d4f51fe036765f3c5ed73dec1ff06"
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-10-07T11:12:37.979694+00:00",
+    "module": "MODEL_INTEGRITY",
+    "event_type": "MODEL_SCAN_COMPLETED",
+    "payload": {
+      "model_name": "clean_model.onnx",
+      "model_hash": "55f9c4354342e59da67f47db2e3541b826c56adfb95b64e48f86c87876dcf70c",
+      "risk_score": 0.0,
+      "status": "PASSED",
+      "flags_count": 0,
+      "summary": "Model integrity audit complete for clean_model.onnx. Checkpoint SHA-256: 55f9c4354342e59d... Detected 0 backdoor vulnerability indicators. Status: PASSED (Trojan Risk Score: 0.0/100)."
+    },
+    "prev_hash": "08545e4f148f7f3d75bd79e07e9342443e2d4f51fe036765f3c5ed73dec1ff06",
+    "current_hash": "b1000e692abb1513f4498b17348a3d3f723c0a00ffe19ec86ccea04a821c5365"
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-10-07T11:12:38.010970+00:00",
+    "module": "MODEL_INTEGRITY",
+    "event_type": "MODEL_SCAN_COMPLETED",
+    "payload": {
+      "model_name": "backdoored_model.onnx",
+      "model_hash": "5374cba1eaf55170d146ba27679b67c32a0a966f2adcf0da8751fff2ffd16225",
+      "risk_score": 100.0,
+      "status": "FAILED",
+      "flags_count": 1,
+      "summary": "Model integrity audit complete for backdoored_model.onnx. Checkpoint SHA-256: 5374cba1eaf55170... Detected 1 backdoor vulnerability indicators. Status: FAILED (Trojan Risk Score: 100.0/100)."
+    },
+    "prev_hash": "b1000e692abb1513f4498b17348a3d3f723c0a00ffe19ec86ccea04a821c5365",
+    "current_hash": "4521f11d6f05f32ba1707758f29e99ed351c48d346189f92d0c02b5e57b7e4d0"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-10-07T11:12:38.081736+00:00",
+    "module": "DRIFT_DETECTION",
+    "event_type": "DRIFT_ASSESSMENT_COMPLETED",
+    "payload": {
+      "baseline_count": 10,
+      "live_count": 10,
+      "risk_score": 100.0,
+      "status": "FAILED",
+      "flags_count": 4,
+      "summary": "Drift assessment complete: Compared 10 live samples against 10 baseline samples. Detected 4 distribution anomalies. Status: FAILED (Environmental Risk Score: 100.0/100)."
+    },
+    "prev_hash": "4521f11d6f05f32ba1707758f29e99ed351c48d346189f92d0c02b5e57b7e4d0",
+    "current_hash": "75d161863f44d336f1eb2dffd63f58674c55968b6f708e133bd094fa13428c99"
   }
 ]

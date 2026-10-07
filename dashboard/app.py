@@ -61,13 +61,11 @@ with st.sidebar:
         <span style="font-weight: 600; font-size: 0.95rem;">Security Engines</span>
     </div>
     """, unsafe_allow_html=True)
-    st.markdown("""
-    - `1_Data_Scan` — Data Quality & Poison Check
-    - `2_Model_Scan` — Black-Box Trojan / Trigger Inversion
-    - `3_Crypto_Verify` — RSA-2048 Inference Provenance
-    - `4_Audit_Logs` — SHA-256 Hash-Chain Ledger
-    - `5_Drift_Monitor` — KS-Test Environmental Shift
-    """)
+    st.page_link("pages/1_Data_Scan.py", label="1. Data Integrity Scan", icon="📦")
+    st.page_link("pages/2_Model_Scan.py", label="2. Model Trojan Scan", icon="🧠")
+    st.page_link("pages/3_Crypto_Verify.py", label="3. Crypto Provenance", icon="🔐")
+    st.page_link("pages/4_Audit_Logs.py", label="4. Audit Logs Ledger", icon="📜")
+    st.page_link("pages/5_Drift_Monitor.py", label="5. Drift Monitor", icon="📈")
     st.markdown("---")
     st.markdown(f"""
     <div style="color: #64748B; font-size: 0.8rem; display: flex; align-items: center; gap: 6px;">
