@@ -15,6 +15,7 @@ if str(root_dir) not in sys.path:
     sys.path.insert(0, str(root_dir))
 
 from src.facade import CVAuditorFacade
+from dashboard.theme_helper import apply_theme
 
 st.set_page_config(
     page_title="CV-Sec | Command Center",
@@ -23,11 +24,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Load External Stylesheet
-css_path = root_dir / "dashboard" / "assets" / "style.css"
-if css_path.exists():
-    with open(css_path, "r", encoding="utf-8") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# Apply Dynamic Light / Dark Theme
+apply_theme()
 
 facade = CVAuditorFacade()
 logs = facade.get_audit_trail()
