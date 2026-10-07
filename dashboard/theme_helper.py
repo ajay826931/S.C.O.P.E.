@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Theme Helper for S.C.O.P.E. Dashboard.
 Provides interactive Light / Dark Mode toggling with dynamic CSS injection.
@@ -14,11 +14,16 @@ def apply_theme():
         st.session_state["theme"] = "Dark"
 
     with st.sidebar:
-        st.markdown("### 🎨 **Display Theme**")
+        st.markdown("""
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <span style="font-weight: 600; font-size: 0.95rem;">Display Theme</span>
+        </div>
+        """, unsafe_allow_html=True)
         current_idx = 0 if st.session_state["theme"] == "Dark" else 1
         chosen = st.radio(
             "Select UI Theme",
-            ["🌙 Dark Cyber", "☀️ Crisp Light"],
+            ["Dark Cyber", "Crisp Light"],
             index=current_idx,
             label_visibility="collapsed",
             key="theme_selector_radio"
@@ -27,6 +32,7 @@ def apply_theme():
         if new_theme != st.session_state["theme"]:
             st.session_state["theme"] = new_theme
             st.rerun()
+
 
     # Base stylesheet
     css_path = Path(__file__).resolve().parent / "assets" / "style.css"
@@ -109,6 +115,58 @@ def apply_theme():
             background: linear-gradient(135deg, #0284C7 0%, #4F46E5 100%) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
+        }
+
+        /* Shadcn Loading & Skeleton in Light Mode */
+        .shadcn-skeleton {
+            background-color: rgba(15, 23, 42, 0.06) !important;
+        }
+        .shadcn-skeleton::after {
+            background-image: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0,
+                rgba(255, 255, 255, 0.4) 20%,
+                rgba(255, 255, 255, 0.7) 60%,
+                rgba(255, 255, 255, 0)
+            ) !important;
+        }
+        .shadcn-loading-card {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border: 1px solid rgba(2, 132, 199, 0.25) !important;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+            color: #0F172A !important;
+        }
+        .shadcn-progress-track {
+            background-color: rgba(15, 23, 42, 0.08) !important;
+        }
+        .shadcn-badge-secondary {
+            background: #F1F5F9 !important;
+            color: #334155 !important;
+            border: 1px solid #CBD5E1 !important;
+        }
+        [data-testid="stStatusWidget"] {
+            background: rgba(255, 255, 255, 0.95) !important;
+            border: 1px solid #BAE6FD !important;
+            color: #0F172A !important;
+        }
+
+        /* Shadcn Table in Light Mode */
+        .shadcn-table-wrapper {
+            background: #FFFFFF !important;
+            border: 1px solid #E2E8F0 !important;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+        }
+        .shadcn-table th {
+            background: #F8FAFC !important;
+            color: #64748B !important;
+            border-bottom: 1px solid #E2E8F0 !important;
+        }
+        .shadcn-table td {
+            color: #0F172A !important;
+            border-bottom: 1px solid #F1F5F9 !important;
+        }
+        .shadcn-table tr:hover td {
+            background-color: #F8FAFC !important;
         }
         </style>
         """

@@ -1,4 +1,4 @@
-﻿/* Cyber-Sec Premium Glassmorphic Theme */
+/* Cyber-Sec Premium Glassmorphic Theme */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 html, body, [class*="css"] {
@@ -88,3 +88,240 @@ code, pre, .terminal-text {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
+
+/* Lucide Icons (shadcn/ui style) */
+svg.lucide {
+    display: inline-block;
+    vertical-align: -3px;
+    flex-shrink: 0;
+}
+
+.status-pill svg.lucide {
+    vertical-align: -2px;
+}
+
+.icon-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ========================================================
+   shadcn/ui Design Tokens & Loading Components
+   ======================================================== */
+:root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --radius: 0.5rem;
+}
+
+/* Animations */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+@keyframes pulse-subtle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+.animate-pulse {
+    animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Shadcn Skeleton */
+.shadcn-skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+}
+
+.shadcn-skeleton::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.05) 20%,
+        rgba(255, 255, 255, 0.12) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 1.8s infinite;
+    content: '';
+}
+
+/* Shadcn Progress Bar */
+.shadcn-progress-container {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.shadcn-progress-track {
+    position: relative;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.shadcn-progress-indicator {
+    height: 100%;
+    width: 0%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #38BDF8 0%, #818CF8 100%);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+/* Shadcn Loading Card / Process Box */
+.shadcn-loading-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 15px rgba(56, 189, 248, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.shadcn-loading-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #38BDF8, #818CF8, #C084FC);
+}
+
+/* Shadcn Badges */
+.shadcn-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.25;
+}
+
+.shadcn-badge-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #E2E8F0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.shadcn-badge-primary {
+    background: rgba(56, 189, 248, 0.15);
+    color: #38BDF8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.shadcn-badge-success {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Streamlit Native Status & Spinner overrides */
+[data-testid="stStatusWidget"] {
+    background: rgba(15, 23, 42, 0.9) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.stSpinner {
+    margin: 16px 0;
+}
+
+.stSpinner > div {
+    border-color: #38BDF8 transparent transparent transparent !important;
+}
+
+/* Sleek Streamlit Progress bar matching shadcn */
+[data-testid="stProgress"] > div > div > div > div {
+    background: linear-gradient(90deg, #38BDF8, #818CF8) !important;
+    border-radius: 9999px !important;
+}
+
+[data-testid="stProgress"] > div > div > div {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 9999px !important;
+    height: 8px !important;
+}
+
+/* Shadcn UI Table */
+.shadcn-table-wrapper {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    overflow-x: auto;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    margin: 12px 0;
+}
+
+.shadcn-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.shadcn-table th {
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.shadcn-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #F8FAFC;
+}
+
+.shadcn-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+
+
