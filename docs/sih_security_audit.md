@@ -61,3 +61,4 @@ Verified project milestones and technical development notes.
 - [2026-10-06 11:42:19] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-10-06 14:02:44] chore: clean up temporary audit logs and cache artifacts
 - [2026-10-06 16:18:50] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
+- [2026-10-07 11:42:19] docs(trojan): record trigger pattern sensitivity matrix
