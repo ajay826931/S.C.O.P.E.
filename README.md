@@ -8,6 +8,7 @@
 [![Model-Retraining](https://img.shields.io/badge/Retraining-Zero%20Retraining%20Required-8B5CF6.svg)]()
 [![Hardware](https://img.shields.io/badge/Hardware-Local%20CPU%20Agnostic-F59E0B.svg)]()
 [![Cryptography](https://img.shields.io/badge/Cryptography-RSA--2048%20%2F%20SHA--256-EF4444.svg)]()
+[![Theme](https://img.shields.io/badge/Theme-Dark%20Cyber%20%7C%20Crisp%20Light-38BDF8.svg)]()
 
 ---
 
@@ -276,6 +277,7 @@ S.C.O.P.E./
 │   └── logger/                     # Pillar 5: SHA-256 Hash-chain immutable ledger
 ├── dashboard/
 │   ├── app.py                      # Master Command Center Hub
+│   ├── theme_helper.py             # Interactive Light & Dark Mode manager
 │   ├── assets/style.css            # Cyber-sec glassmorphism stylesheet
 │   └── pages/
 │       ├── 1_Data_Scan.py          # Interactive dataset inspector & bounding box overlay
