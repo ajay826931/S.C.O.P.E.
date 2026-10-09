@@ -68,3 +68,4 @@ Verified project milestones and technical development notes.
 - [2026-10-08 11:05:40] chore(test): add unit tests for corrupted weight tensor detectors
 - [2026-10-08 13:15:10] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-10-08 15:33:15] docs(compliance): align security audit checks with AI safety standards
+- [2026-10-09 10:14:22] feat(dashboard): add custom dataset and model upload capability for security audits

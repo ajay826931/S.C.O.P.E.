@@ -41,20 +41,53 @@ st.markdown(f"""
 
 facade = get_facade()
 
-col_input, col_preset = st.columns([2, 1])
+# Dataset Source Selection (Upload or Preset)
+st.markdown(f"""
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+    {lucide('upload-cloud', size=20, color='#38BDF8')}
+    <span style="font-weight: 600; font-size: 1.05rem;">Choose Dataset Source:</span>
+</div>
+""", unsafe_allow_html=True)
 
-with col_preset:
-    preset = st.selectbox(
-        "Choose Dataset Scenario:",
-        [
-            "data/poisoned_data (Injected Poison Attack Vector)",
-            "data/clean_data (Verified Reference Dataset)"
-        ]
+dataset_source = st.radio(
+    "Choose Dataset Source:",
+    ["Use Preset Demonstration Datasets", "Upload Custom Dataset Images & Labels"],
+    horizontal=True,
+    label_visibility="collapsed"
+)
+
+if dataset_source == "Upload Custom Dataset Images & Labels":
+    uploaded_files = st.file_uploader(
+        "Upload Image files (.png, .jpg) & YOLO Label files (.txt):",
+        type=["png", "jpg", "jpeg", "txt"],
+        accept_multiple_files=True,
+        help="Upload images and their corresponding YOLO annotation text files."
     )
-    chosen_path = preset.split()[0]
-
-with col_input:
-    dataset_path = st.text_input("Dataset Directory Path:", value=chosen_path)
+    if uploaded_files:
+        upload_dir = root_dir / "data" / "uploaded_data"
+        upload_dir.mkdir(parents=True, exist_ok=True)
+        for uf in uploaded_files:
+            file_dest = upload_dir / uf.name
+            with open(file_dest, "wb") as f:
+                f.write(uf.getbuffer())
+        dataset_path = str(upload_dir)
+        st.success(f"{len(uploaded_files)} files saved to: `{dataset_path}`. Ready for scan!")
+    else:
+        dataset_path = "data/poisoned_data"
+        st.info("Upload dataset images and label files above, or run with default test dataset.")
+else:
+    col_input, col_preset = st.columns([2, 1])
+    with col_preset:
+        preset = st.selectbox(
+            "Choose Dataset Scenario:",
+            [
+                "data/poisoned_data (Injected Poison Attack Vector)",
+                "data/clean_data (Verified Reference Dataset)"
+            ]
+        )
+        chosen_path = preset.split()[0]
+    with col_input:
+        dataset_path = st.text_input("Dataset Directory Path:", value=chosen_path)
 
 if st.button("Run Comprehensive Dataset Audit", type="primary", use_container_width=True):
     progress_ph = st.empty()

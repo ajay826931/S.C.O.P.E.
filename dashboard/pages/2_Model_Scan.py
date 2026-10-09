@@ -40,20 +40,51 @@ st.markdown(f"""
 
 facade = get_facade()
 
-col_model, col_preset = st.columns([2, 1])
+# Model Source Selection (Upload or Preset)
+st.markdown(f"""
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+    {lucide('upload-cloud', size=20, color='#38BDF8')}
+    <span style="font-weight: 600; font-size: 1.05rem;">Choose AI Model Source:</span>
+</div>
+""", unsafe_allow_html=True)
 
-with col_preset:
-    preset = st.selectbox(
-        "Select Model Test Scenario:",
-        [
-            "data/models/backdoored_model.onnx (Injected Trojan Attack Vector)",
-            "data/models/clean_model.onnx (Verified Clean Model)"
-        ]
+model_source = st.radio(
+    "Choose Model Source:",
+    ["Use Preset Demonstration Models", "Upload Custom AI Model (.onnx / .pt)"],
+    horizontal=True,
+    label_visibility="collapsed"
+)
+
+if model_source == "Upload Custom AI Model (.onnx / .pt)":
+    uploaded_model = st.file_uploader(
+        "Upload your AI Model File (.onnx or .pt):",
+        type=["onnx", "pt"],
+        help="Upload an ONNX or PyTorch model to inspect its tensor layers and audit for Trojans/backdoors."
     )
-    chosen_model = preset.split()[0]
-
-with col_model:
-    model_path = st.text_input("Target Model Checkpoint Path (.onnx):", value=chosen_model)
+    if uploaded_model is not None:
+        upload_dir = root_dir / "data" / "models" / "uploaded"
+        upload_dir.mkdir(parents=True, exist_ok=True)
+        saved_path = upload_dir / uploaded_model.name
+        with open(saved_path, "wb") as f:
+            f.write(uploaded_model.getbuffer())
+        model_path = str(saved_path)
+        st.success(f"Model saved to: `{model_path}` ({uploaded_model.size / 1024:.1f} KB). Ready for audit!")
+    else:
+        model_path = "data/models/backdoored_model.onnx"
+        st.info("Upload your `.onnx` or `.pt` model file above, or run with the default test model.")
+else:
+    col_model, col_preset = st.columns([2, 1])
+    with col_preset:
+        preset = st.selectbox(
+            "Select Model Test Scenario:",
+            [
+                "data/models/backdoored_model.onnx (Injected Trojan Attack Vector)",
+                "data/models/clean_model.onnx (Verified Clean Model)"
+            ]
+        )
+        chosen_model = preset.split()[0]
+    with col_model:
+        model_path = st.text_input("Target Model Checkpoint Path (.onnx):", value=chosen_model)
 
 if st.button("Execute Black-Box Trojan Audit", type="primary", use_container_width=True):
     progress_ph = st.empty()

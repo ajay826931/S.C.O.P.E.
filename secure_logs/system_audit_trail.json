@@ -1,35 +1,34 @@
 [
   {
     "index": 0,
-    "timestamp": "2026-10-06T09:26:06.223888+00:00",
+    "timestamp": "2026-11-18T05:30:58.050789+00:00",
     "module": "SYSTEM",
     "event_type": "LEDGER_INITIALIZED",
     "payload": {
-      "message": "Admin initialized fresh audit trail.",
-      "MALICIOUS_MODIFICATION": "ATTACKER_ALTERED_RECORDS"
+      "message": "Admin initialized fresh audit trail."
     },
     "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "current_hash": "387f492316e1d375f9840470bf3fcba6796306546cf68872d21ecd81f380424e"
+    "current_hash": "f53fd3f5af66e2fd76844813796b9f647facb0e1eef8c80207d732516ef5d8d9"
   },
   {
     "index": 1,
-    "timestamp": "2026-10-07T11:12:36.838359+00:00",
-    "module": "DATA_INTEGRITY",
-    "event_type": "DATA_SCAN_COMPLETED",
+    "timestamp": "2026-11-18T05:31:28.032764+00:00",
+    "module": "CRYPTO_PROVENANCE",
+    "event_type": "TAMPER_ATTEMPT_BLOCKED",
     "payload": {
-      "dataset_path": "data/clean_data",
-      "total_images": 3,
-      "flags_count": 0,
-      "risk_score": 0.0,
-      "status": "PASSED",
-      "summary": "Dataset audit finished: 3 images inspected. Found 0 issues across 3 strategies. Status: PASSED (Risk Score: 0.0/100)."
+      "tamper_type": "PAYLOAD_TAMPERING",
+      "reason": "Manifest tampering detected! Payload content was altered after signing.",
+      "details": {
+        "expected": "abb6275d19f72c886e0552b191ad040a2a7526ee2829fc8df089fb3c02fa7eab",
+        "actual": "abb772b42d9dcd18e58d59f726e24a5e88e5650c18a7e5b7c96f5b7f0caed1f9"
+      }
     },
-    "prev_hash": "387f492316e1d375f9840470bf3fcba6796306546cf68872d21ecd81f380424e",
-    "current_hash": "7fcb1a6b48c6a08c70273babf274a902e792fe489485a2e05ceb6756c3d3d955"
+    "prev_hash": "f53fd3f5af66e2fd76844813796b9f647facb0e1eef8c80207d732516ef5d8d9",
+    "current_hash": "47fb83809e47bac47dc8d0b0012b6fe671dfe76cfbb9db27485beb5cf6629b08"
   },
   {
     "index": 2,
-    "timestamp": "2026-10-07T11:12:36.965985+00:00",
+    "timestamp": "2026-11-18T08:25:01.193517+00:00",
     "module": "DATA_INTEGRITY",
     "event_type": "DATA_SCAN_COMPLETED",
     "payload": {
@@ -40,28 +39,45 @@
       "status": "FAILED",
       "summary": "Dataset audit finished: 4 images inspected. Found 7 issues across 3 strategies. Status: FAILED (Risk Score: 100.0/100)."
     },
-    "prev_hash": "7fcb1a6b48c6a08c70273babf274a902e792fe489485a2e05ceb6756c3d3d955",
-    "current_hash": "08545e4f148f7f3d75bd79e07e9342443e2d4f51fe036765f3c5ed73dec1ff06"
+    "prev_hash": "47fb83809e47bac47dc8d0b0012b6fe671dfe76cfbb9db27485beb5cf6629b08",
+    "current_hash": "e563b9b2f82d2d585aabae6b87873f9a446ad2a2bc153e1de8f52c45e9fbab7d"
   },
   {
     "index": 3,
-    "timestamp": "2026-10-07T11:12:37.979694+00:00",
-    "module": "MODEL_INTEGRITY",
-    "event_type": "MODEL_SCAN_COMPLETED",
+    "timestamp": "2026-11-18T08:28:29.180194+00:00",
+    "module": "DATA_INTEGRITY",
+    "event_type": "DATA_SCAN_COMPLETED",
     "payload": {
-      "model_name": "clean_model.onnx",
-      "model_hash": "55f9c4354342e59da67f47db2e3541b826c56adfb95b64e48f86c87876dcf70c",
-      "risk_score": 0.0,
-      "status": "PASSED",
-      "flags_count": 0,
-      "summary": "Model integrity audit complete for clean_model.onnx. Checkpoint SHA-256: 55f9c4354342e59d... Detected 0 backdoor vulnerability indicators. Status: PASSED (Trojan Risk Score: 0.0/100)."
+      "dataset_path": "data/poisoned_data",
+      "total_images": 4,
+      "flags_count": 7,
+      "risk_score": 100.0,
+      "status": "FAILED",
+      "summary": "Dataset audit finished: 4 images inspected. Found 7 issues across 3 strategies. Status: FAILED (Risk Score: 100.0/100).",
+      "MALICIOUS_MODIFICATION": "ATTACKER_ALTERED_RECORDS"
     },
-    "prev_hash": "08545e4f148f7f3d75bd79e07e9342443e2d4f51fe036765f3c5ed73dec1ff06",
-    "current_hash": "b1000e692abb1513f4498b17348a3d3f723c0a00ffe19ec86ccea04a821c5365"
+    "prev_hash": "e563b9b2f82d2d585aabae6b87873f9a446ad2a2bc153e1de8f52c45e9fbab7d",
+    "current_hash": "dff843b76e46512b2b70f686f43868ecf4961e9ef3862510ff0f5940e2cd858e"
   },
   {
     "index": 4,
-    "timestamp": "2026-10-07T11:12:38.010970+00:00",
+    "timestamp": "2026-11-18T08:40:26.464617+00:00",
+    "module": "DATA_INTEGRITY",
+    "event_type": "DATA_SCAN_COMPLETED",
+    "payload": {
+      "dataset_path": "data/poisoned_data",
+      "total_images": 4,
+      "flags_count": 7,
+      "risk_score": 100.0,
+      "status": "FAILED",
+      "summary": "Dataset audit finished: 4 images inspected. Found 7 issues across 3 strategies. Status: FAILED (Risk Score: 100.0/100)."
+    },
+    "prev_hash": "dff843b76e46512b2b70f686f43868ecf4961e9ef3862510ff0f5940e2cd858e",
+    "current_hash": "c29bb614b6fc18b24c7bef012b07cbc04960c5ee16f1f332f9f3947b55fcecd2"
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-11-18T08:41:23.517842+00:00",
     "module": "MODEL_INTEGRITY",
     "event_type": "MODEL_SCAN_COMPLETED",
     "payload": {
@@ -72,23 +88,7 @@
       "flags_count": 1,
       "summary": "Model integrity audit complete for backdoored_model.onnx. Checkpoint SHA-256: 5374cba1eaf55170... Detected 1 backdoor vulnerability indicators. Status: FAILED (Trojan Risk Score: 100.0/100)."
     },
-    "prev_hash": "b1000e692abb1513f4498b17348a3d3f723c0a00ffe19ec86ccea04a821c5365",
-    "current_hash": "4521f11d6f05f32ba1707758f29e99ed351c48d346189f92d0c02b5e57b7e4d0"
-  },
-  {
-    "index": 5,
-    "timestamp": "2026-10-07T11:12:38.081736+00:00",
-    "module": "DRIFT_DETECTION",
-    "event_type": "DRIFT_ASSESSMENT_COMPLETED",
-    "payload": {
-      "baseline_count": 10,
-      "live_count": 10,
-      "risk_score": 100.0,
-      "status": "FAILED",
-      "flags_count": 4,
-      "summary": "Drift assessment complete: Compared 10 live samples against 10 baseline samples. Detected 4 distribution anomalies. Status: FAILED (Environmental Risk Score: 100.0/100)."
-    },
-    "prev_hash": "4521f11d6f05f32ba1707758f29e99ed351c48d346189f92d0c02b5e57b7e4d0",
-    "current_hash": "75d161863f44d336f1eb2dffd63f58674c55968b6f708e133bd094fa13428c99"
+    "prev_hash": "c29bb614b6fc18b24c7bef012b07cbc04960c5ee16f1f332f9f3947b55fcecd2",
+    "current_hash": "c601fd76acacd959cec857febbf1823a5b471b212d5840d86407bab4a847063e"
   }
 ]
