@@ -71,3 +71,4 @@ Verified project milestones and technical development notes.
 - [2026-10-09 10:14:22] feat(dashboard): add custom dataset and model upload capability for security audits
 - [2026-10-09 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
 - [2026-10-09 14:48:30] feat(alerts): add visual danger tags for high-confidence trojan layers
+- [2026-10-10 10:14:22] refactor(scanner): modularize feature attribution heatmap generator
