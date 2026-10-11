@@ -76,3 +76,4 @@ Verified project milestones and technical development notes.
 - [2026-10-10 14:48:30] fix(validation): handle corrupt ONNX protobuf headers gracefully
 - [2026-10-10 17:05:25] feat(alerts): add visual danger tags for high-confidence trojan layers
 - [2026-10-10 19:22:40] docs(security): document spectral defense against label flip attacks
+- [2026-10-11 11:05:40] perf(memory): release GPU memory buffers immediately after audit pass
