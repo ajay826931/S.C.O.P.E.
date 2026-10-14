@@ -85,3 +85,4 @@ Verified project milestones and technical development notes.
 - [2026-10-13 15:33:15] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-10-13 17:52:12] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-10-13 20:05:15] feat(dashboard): add interactive threshold slider for backdoor confidence
+- [2026-10-14 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
