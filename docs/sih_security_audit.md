@@ -87,3 +87,4 @@ Verified project milestones and technical development notes.
 - [2026-10-13 20:05:15] feat(dashboard): add interactive threshold slider for backdoor confidence
 - [2026-10-14 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
 - [2026-10-14 14:02:44] docs(sih): record jury presentation talking points and demo flow
+- [2026-10-14 16:18:50] fix(labels): validate class indices against custom dataset ontology
