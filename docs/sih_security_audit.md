@@ -92,3 +92,4 @@ Verified project milestones and technical development notes.
 - [2026-10-15 14:02:44] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-10-16 11:05:40] docs(compliance): align security audit checks with AI safety standards
 - [2026-10-16 13:15:10] fix(validation): handle corrupt ONNX protobuf headers gracefully
+- [2026-10-16 15:33:15] feat(alerts): add visual danger tags for high-confidence trojan layers
