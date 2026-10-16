@@ -90,3 +90,4 @@ Verified project milestones and technical development notes.
 - [2026-10-14 16:18:50] fix(labels): validate class indices against custom dataset ontology
 - [2026-10-15 11:42:19] chore(test): add unit tests for corrupted weight tensor detectors
 - [2026-10-15 14:02:44] refactor(scanner): modularize feature attribution heatmap generator
+- [2026-10-16 11:05:40] docs(compliance): align security audit checks with AI safety standards
