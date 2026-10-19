@@ -96,3 +96,4 @@ Verified project milestones and technical development notes.
 - [2026-10-17 11:42:19] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-10-19 11:42:19] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-10-19 14:02:44] perf(memory): release GPU memory buffers immediately after audit pass
+- [2026-10-19 16:18:50] docs(trojan): record trigger pattern sensitivity matrix
