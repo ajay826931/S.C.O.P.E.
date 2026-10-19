@@ -97,3 +97,4 @@ Verified project milestones and technical development notes.
 - [2026-10-19 11:42:19] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-10-19 14:02:44] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-10-19 16:18:50] docs(trojan): record trigger pattern sensitivity matrix
+- [2026-10-19 18:38:05] feat(dashboard): add interactive threshold slider for backdoor confidence
