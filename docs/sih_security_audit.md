@@ -95,3 +95,4 @@ Verified project milestones and technical development notes.
 - [2026-10-16 15:33:15] feat(alerts): add visual danger tags for high-confidence trojan layers
 - [2026-10-17 11:42:19] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-10-19 11:42:19] refactor(dashboard): improve progress feedback during multi-file scan
+- [2026-10-19 14:02:44] perf(memory): release GPU memory buffers immediately after audit pass
