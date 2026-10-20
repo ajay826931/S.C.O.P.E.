@@ -99,3 +99,4 @@ Verified project milestones and technical development notes.
 - [2026-10-19 16:18:50] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-10-19 18:38:05] feat(dashboard): add interactive threshold slider for backdoor confidence
 - [2026-10-20 11:42:19] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
+- [2026-10-20 14:02:44] refactor(dashboard): improve progress feedback during multi-file scan
