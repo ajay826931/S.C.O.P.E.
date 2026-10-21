@@ -102,3 +102,4 @@ Verified project milestones and technical development notes.
 - [2026-10-20 14:02:44] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-10-20 16:18:50] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-10-21 11:42:19] feat(alerts): add visual danger tags for high-confidence trojan layers
+- [2026-10-21 14:02:44] docs(security): document spectral defense against label flip attacks
