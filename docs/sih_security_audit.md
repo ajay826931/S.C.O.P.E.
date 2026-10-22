@@ -108,3 +108,4 @@ Verified project milestones and technical development notes.
 - [2026-10-22 11:42:19] fix(labels): validate class indices against custom dataset ontology
 - [2026-10-22 14:02:44] feat(export): support PDF summary generation for audit certificates
 - [2026-10-22 16:18:50] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
+- [2026-10-22 18:38:05] refactor(dashboard): improve progress feedback during multi-file scan
