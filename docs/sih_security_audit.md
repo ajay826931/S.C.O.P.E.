@@ -106,3 +106,4 @@ Verified project milestones and technical development notes.
 - [2026-10-21 16:18:50] refactor(io): stream large tensor files to prevent heap exhaustion
 - [2026-10-21 18:38:05] perf(scan): parallelize tensor layer inspection for faster scan time
 - [2026-10-22 11:42:19] fix(labels): validate class indices against custom dataset ontology
+- [2026-10-22 14:02:44] feat(export): support PDF summary generation for audit certificates
