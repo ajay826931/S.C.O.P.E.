@@ -111,3 +111,4 @@ Verified project milestones and technical development notes.
 - [2026-10-22 18:38:05] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-10-23 11:05:40] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-10-24 10:14:22] perf(memory): release GPU memory buffers immediately after audit pass
+- [2026-10-24 12:28:35] docs(trojan): record trigger pattern sensitivity matrix
