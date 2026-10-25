@@ -112,3 +112,4 @@ Verified project milestones and technical development notes.
 - [2026-10-23 11:05:40] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-10-24 10:14:22] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-10-24 12:28:35] docs(trojan): record trigger pattern sensitivity matrix
+- [2026-10-25 10:14:22] refactor(io): stream large tensor files to prevent heap exhaustion
