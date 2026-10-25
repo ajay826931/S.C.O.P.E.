@@ -114,3 +114,4 @@ Verified project milestones and technical development notes.
 - [2026-10-24 12:28:35] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-10-25 10:14:22] refactor(io): stream large tensor files to prevent heap exhaustion
 - [2026-10-25 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
+- [2026-10-25 14:48:30] docs(mitigation): compile clean-label attack defense recommendations
