@@ -116,3 +116,4 @@ Verified project milestones and technical development notes.
 - [2026-10-25 12:28:35] perf(scan): parallelize tensor layer inspection for faster scan time
 - [2026-10-25 14:48:30] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-10-26 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
+- [2026-10-26 12:28:35] refactor(dashboard): improve progress feedback during multi-file scan
