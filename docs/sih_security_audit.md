@@ -118,3 +118,4 @@ Verified project milestones and technical development notes.
 - [2026-10-26 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-10-26 12:28:35] refactor(dashboard): improve progress feedback during multi-file scan
 - [2026-10-26 14:48:30] perf(memory): release GPU memory buffers immediately after audit pass
+- [2026-10-28 10:14:22] fix(labels): validate class indices against custom dataset ontology
