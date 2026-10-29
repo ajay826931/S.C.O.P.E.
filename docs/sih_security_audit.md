@@ -120,3 +120,4 @@ Verified project milestones and technical development notes.
 - [2026-10-26 14:48:30] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-10-28 10:14:22] fix(labels): validate class indices against custom dataset ontology
 - [2026-10-29 10:14:22] docs(compliance): align security audit checks with AI safety standards
+- [2026-10-29 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
