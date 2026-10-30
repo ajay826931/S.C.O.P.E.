@@ -123,3 +123,4 @@ Verified project milestones and technical development notes.
 - [2026-10-29 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
 - [2026-10-30 11:05:40] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-10-30 13:15:10] feat(audit): add checksum validation for uploaded dataset archives
+- [2026-10-30 15:33:15] chore: clean up temporary audit logs and cache artifacts
