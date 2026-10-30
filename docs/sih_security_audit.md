@@ -121,3 +121,4 @@ Verified project milestones and technical development notes.
 - [2026-10-28 10:14:22] fix(labels): validate class indices against custom dataset ontology
 - [2026-10-29 10:14:22] docs(compliance): align security audit checks with AI safety standards
 - [2026-10-29 12:28:35] fix(validation): handle corrupt ONNX protobuf headers gracefully
+- [2026-10-30 11:05:40] docs(mitigation): compile clean-label attack defense recommendations
