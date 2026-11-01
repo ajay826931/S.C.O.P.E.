@@ -129,3 +129,4 @@ Verified project milestones and technical development notes.
 - [2026-10-31 14:48:30] docs(sih): record jury presentation talking points and demo flow
 - [2026-10-31 17:05:25] fix(labels): validate class indices against custom dataset ontology
 - [2026-10-31 19:22:40] feat(export): support PDF summary generation for audit certificates
+- [2026-11-01 11:42:19] feat(alerts): add visual danger tags for high-confidence trojan layers
