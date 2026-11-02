@@ -132,3 +132,4 @@ Verified project milestones and technical development notes.
 - [2026-11-01 11:42:19] feat(alerts): add visual danger tags for high-confidence trojan layers
 - [2026-11-02 11:05:40] refactor(io): stream large tensor files to prevent heap exhaustion
 - [2026-11-02 13:15:10] perf(scan): parallelize tensor layer inspection for faster scan time
+- [2026-11-02 15:33:15] docs(mitigation): compile clean-label attack defense recommendations
