@@ -134,3 +134,4 @@ Verified project milestones and technical development notes.
 - [2026-11-02 13:15:10] perf(scan): parallelize tensor layer inspection for faster scan time
 - [2026-11-02 15:33:15] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-11-03 11:42:19] docs(compliance): align security audit checks with AI safety standards
+- [2026-11-03 14:02:44] fix(validation): handle corrupt ONNX protobuf headers gracefully
