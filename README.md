@@ -321,7 +321,6 @@ S.C.O.P.E./
 
 ---
 
-## 📜 License
 ## 👤 Author
 Architected and developed by **Ajayraj Kushwah** ([@ajay826931](https://github.com/ajay826931)) as a standalone open-source Computer Vision security & assurance framework.
 
