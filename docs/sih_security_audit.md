@@ -138,3 +138,4 @@ Verified project milestones and technical development notes.
 - [2026-11-04 10:14:22] perf(memory): release GPU memory buffers immediately after audit pass
 - [2026-11-04 12:28:35] docs(trojan): record trigger pattern sensitivity matrix
 - [2026-11-05 11:05:40] fix(labels): validate class indices against custom dataset ontology
+- [2026-11-06 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
