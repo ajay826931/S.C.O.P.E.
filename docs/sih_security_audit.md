@@ -141,3 +141,4 @@ Verified project milestones and technical development notes.
 - [2026-11-06 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-11-10 10:14:22] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-11-11 10:14:22] chore: clean up temporary audit logs and cache artifacts
+- [2026-11-11 12:28:35] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
