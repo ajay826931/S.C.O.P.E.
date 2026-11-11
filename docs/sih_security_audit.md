@@ -140,3 +140,4 @@ Verified project milestones and technical development notes.
 - [2026-11-05 11:05:40] fix(labels): validate class indices against custom dataset ontology
 - [2026-11-06 10:14:22] docs(benchmark): tabulate detection accuracy across YOLOv8 checkpoints
 - [2026-11-10 10:14:22] refactor(scanner): modularize feature attribution heatmap generator
+- [2026-11-11 10:14:22] chore: clean up temporary audit logs and cache artifacts
