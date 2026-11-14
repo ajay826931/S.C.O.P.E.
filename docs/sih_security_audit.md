@@ -146,3 +146,4 @@ Verified project milestones and technical development notes.
 - [2026-11-13 10:14:22] docs(mitigation): compile clean-label attack defense recommendations
 - [2026-11-13 12:28:35] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-11-14 11:42:19] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
+- [2026-11-14 14:02:44] docs(sih): record jury presentation talking points and demo flow
