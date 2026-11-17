@@ -153,3 +153,4 @@ Verified project milestones and technical development notes.
 - [2026-11-16 11:42:19] feat(audit): add checksum validation for uploaded dataset archives
 - [2026-11-16 14:02:44] chore: clean up temporary audit logs and cache artifacts
 - [2026-11-17 11:05:40] refactor(viz): render Grad-CAM saliency maps with responsive dimensions
+- [2026-11-17 13:15:10] docs(sih): record jury presentation talking points and demo flow
