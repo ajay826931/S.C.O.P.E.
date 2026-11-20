@@ -160,3 +160,4 @@ Verified project milestones and technical development notes.
 - [2026-11-19 10:14:22] docs(compliance): align security audit checks with AI safety standards
 - [2026-11-20 10:14:22] refactor(scanner): modularize feature attribution heatmap generator
 - [2026-11-20 12:28:35] docs(compliance): align security audit checks with AI safety standards
+- [2026-11-20 14:48:30] fix(validation): handle corrupt ONNX protobuf headers gracefully
